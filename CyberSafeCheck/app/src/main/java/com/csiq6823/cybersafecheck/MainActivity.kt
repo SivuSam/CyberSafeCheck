@@ -21,11 +21,12 @@ class MainActivity : AppCompatActivity() {
             CyberSafeCheckTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
 
-                    // Hosts the XML FrameLayout (activity_main.xml) inside Compose.
+
                     AndroidViewBinding(
                         factory = ActivityMainBinding::inflate,
                         modifier = Modifier.padding(innerPadding).fillMaxSize()
                     ) {
+
                         if (supportFragmentManager.findFragmentById(root.id) == null) {
                             supportFragmentManager.commit {
                                 add(root.id, ChecklistFragment())

@@ -9,7 +9,6 @@ import com.csiq6823.cybersafecheck.databinding.FragmentRiskDetailBinding
 import java.util.UUID
 
 private const val ARG_RISK_ITEM_ID = "risk_item_id"
-
 class RiskDetailFragment : Fragment() {
 
     private var _binding: FragmentRiskDetailBinding? = null

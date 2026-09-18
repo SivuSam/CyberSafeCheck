@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.ksp)
 }
 
 android {
@@ -48,10 +49,16 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.fragment)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
-    // UI & Layouts needed for the checklist / detail screens
+    // UI & Layouts
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.constraintlayout:constraintlayout:2.1.3")
+
+    // Room Database Components (KSP managed)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
 
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
