@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CyberSafeCheck</string>
+    <string name="checklist_title">Digital Habits Checklist</string>
+    <string name="detail_category_label">Category</string>
+    <string name="detail_explanation_label">Why this matters</string>
+    <string name="action_calculate_score">Calculate My Score</string>
+    <string name="action_reset_checklist">Reset Checklist</string>
+    <string name="action_view_history">View History</string>
+    <string name="history_empty_state">No assessments saved yet. Calculate your score and save it to see your history here.</string>
+</resources>
